@@ -32,6 +32,7 @@
   "dependencies": {
     "@google/model-viewer": "^1.12.0",
     "@holaplex/js": "^4.3.3",
+    "@metaplex-foundation/js": "^0.15.0",
     "@metaplex/js": "^4.11.3",
     "@solana/wallet-adapter-react-ui": "^0.9.7",
     "antd": "^4.16.7",
