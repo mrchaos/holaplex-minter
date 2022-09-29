@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { StepWizardChildProps } from 'react-step-wizard';
 import styled from 'styled-components';
 import Paragraph from 'antd/lib/typography/Paragraph';
-import { Coingecko, Currency } from '@metaplex/js';
+import { Coingecko, Currency } from 'e4-metaplex-js';
 import NavContainer from './NavContainer';
 import { Connection, LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js';
 import { FilePreview } from '..';

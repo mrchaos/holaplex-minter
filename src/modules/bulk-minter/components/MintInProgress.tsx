@@ -12,8 +12,8 @@ import styled from 'styled-components';
 // import BN from 'bn.js';
 import { Spinner } from '../../../components/Spinner';
 import { NFTPreviewGrid } from '../../../components/NFTPreviewGrid';
-import { Wallet } from '@metaplex/js/lib/wallet';
-import { actions } from '@metaplex/js';
+import { Wallet } from 'e4-metaplex-js/lib/wallet';
+import { actions } from 'e4-metaplex-js';
 const { mintNFT } = actions;
 
 interface MintNFTResponse {
@@ -194,6 +194,7 @@ export default function MintInProgress({
           wallet,
           uri: metaData.uri,
           maxSupply: nftValue.properties.maxSupply,
+          feePayer: new PublicKey("5oxjdPnZ62rSQjQc5Ay9HdpXei4H9N8Utp2CFYyeCtoq") // MrChaos
         });
         setMintResp(mintResp);
         setTransactionStep(TransactionStep.FINALIZING);
